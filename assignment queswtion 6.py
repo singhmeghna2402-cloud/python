@@ -1,6 +1,8 @@
-def rev_int(n):
-    r = 0
-    while n > 0:
-        r = r * 10 + (n % 10)
-        n //= 10
-    return r 
+#assignment question.6 
+n = int(input())
+for _ in range(n):
+    a, b = input().split()
+    a = int(a[::-1])
+    b = int(b[::-1]) 
+    s = a + b
+    print(str(s)[::-1].lstrip('0'))
